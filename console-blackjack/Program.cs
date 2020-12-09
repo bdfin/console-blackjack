@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace console_blackjack
+namespace ConsoleBlackjack
 {
     class Program
     {

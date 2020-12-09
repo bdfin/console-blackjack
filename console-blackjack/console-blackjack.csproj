@@ -1,16 +1,12 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>ConsoleBlackjack</RootNamespace>
-    <PackageId>Console Blackjack</PackageId>
-    <Authors>Beau Findlay</Authors>
-    <Product>Console Blackjack</Product>
-  </PropertyGroup>
-
-  <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net5.0</TargetFramework>
+		<RootNamespace>ConsoleBlackjack</RootNamespace>
+		<PackageId>Console Blackjack</PackageId>
+		<Authors>Beau Findlay</Authors>
+		<Product>Console Blackjack</Product>
+	</PropertyGroup>
 
 </Project>
