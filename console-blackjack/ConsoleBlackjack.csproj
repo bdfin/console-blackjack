@@ -9,4 +9,8 @@
 		<Product>Console Blackjack</Product>
 	</PropertyGroup>
 
+	<ItemGroup>
+		<Folder Include="Services\" />
+	</ItemGroup>
+
 </Project>
