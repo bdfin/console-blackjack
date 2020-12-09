@@ -3,11 +3,6 @@ using System.Collections.ObjectModel;
 
 namespace ConsoleBlackjack.Common
 {
-    public class Constants
-    {
-
-    }
-
     public class CardConstants
     {
         public const string Ace = "Ace";
