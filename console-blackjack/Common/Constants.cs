@@ -37,4 +37,9 @@ namespace ConsoleBlackjack.Common
         public const string ShufflingCards = "Shuffling cards.";
         public const string DealingCards = "Dealing cards.";
     }
+
+    public static class BettingMessages
+    {
+        public const string InsufficientChips = "You don't have enough chips to make this bet.";
+    }
 }
