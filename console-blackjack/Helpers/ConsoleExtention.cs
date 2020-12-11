@@ -4,7 +4,7 @@ using System.Threading;
 
 namespace ConsoleBlackjack.Helpers
 {
-    public static class ConsoleText
+    public static class ConsoleExtention
     {
         public static void Scroll(string message)
         {
@@ -42,6 +42,12 @@ namespace ConsoleBlackjack.Helpers
                 Console.Write(".");
                 Thread.Sleep(scrollSpeed);
             }
+        }
+
+        public static void Continue()
+        {
+            Scroll(StandardMessages.Continue);
+            Console.ReadKey();
         }
     }
 }
