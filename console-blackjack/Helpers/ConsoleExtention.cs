@@ -48,6 +48,14 @@ namespace ConsoleBlackjack.Helpers
         {
             Scroll(StandardMessages.Continue);
             Console.ReadKey();
+            Console.Clear();
+        }
+
+        public static void WriteErrorMessage(string message)
+        {
+            Console.ForegroundColor = ConsoleColor.DarkRed;
+            Console.WriteLine(message);
+            Console.ResetColor();
         }
     }
 }
