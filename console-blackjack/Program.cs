@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ConsoleBlackjack.Models;
+using ConsoleBlackjack.Services;
+using System;
 
 namespace ConsoleBlackjack
 {
@@ -6,7 +8,7 @@ namespace ConsoleBlackjack
     {
         static void Main(string[] args)
         {
-
+            Game.Initialise();
         }
     }
 }

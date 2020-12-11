@@ -31,7 +31,7 @@ namespace ConsoleBlackjack.Tests
         }
 
         [TestMethod]
-        public void HasDifferentCardOrder()
+        public void IsShuffleSuccessful()
         {
             bool match = false;
 
