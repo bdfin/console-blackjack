@@ -1,4 +1,5 @@
-﻿using ConsoleBlackjack.Helpers;
+﻿using ConsoleBlackjack.Common;
+using ConsoleBlackjack.Helpers;
 using ConsoleBlackjack.Models;
 using System;
 using System.Collections.Generic;
@@ -12,16 +13,25 @@ namespace ConsoleBlackjack.Services
     {
         private static Deck Deck;
 
+        public static void Welcome()
+        {
+            ConsoleExtention.Scroll(StandardMessages.Welcome);
+            Console.Clear();
+
+            ConsoleExtention.Continue();
+        }
+
         public static void Initialise()
         {
-            ConsoleText.Scroll("Welcome to Console Blackjack!");
-            ConsoleText.Scroll("Building deck.");
-            ConsoleText.Scroll("Shuffling cards.");
-            ConsoleText.Scroll("Dealing cards.");
+            ConsoleExtention.Scroll(StandardMessages.ShufflingCards);
 
             Deck = new Deck();
-            Deck.Build();
-            Deck.Shuffle();
+            Deck.Initialise();
+
+            ConsoleExtention.Scroll(StandardMessages.DealingCards);
+            Console.Clear();
+
+            ConsoleExtention.Continue();
         }
     }
 }

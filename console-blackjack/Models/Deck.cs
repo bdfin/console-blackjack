@@ -14,6 +14,12 @@ namespace ConsoleBlackjack.Models
             Cards = new List<Card>();
         }
 
+        public void Initialise()
+        {
+            Build();
+            Shuffle();
+        }
+
         public void Build()
         {
             foreach (var suit in CardConstants.Suits)
