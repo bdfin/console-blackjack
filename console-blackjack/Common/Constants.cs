@@ -3,7 +3,7 @@ using System.Collections.ObjectModel;
 
 namespace ConsoleBlackjack.Common
 {
-    public class CardConstants
+    public static class CardConstants
     {
         public const string Ace = "Ace";
         public const string One = "1";
@@ -23,11 +23,18 @@ namespace ConsoleBlackjack.Common
         public static readonly IList<string> Suits = new ReadOnlyCollection<string>(
             new List<string>
             {
-
                 { "Clubs" },
                 { "Diamonds" },
                 { "Hearts" },
                 { "Spades" }
             });
+    }
+
+    public static class StandardMessages
+    {
+        public const string Welcome = "Welcome to Console Blackjack!";
+        public const string Continue = "Press any key to continue.";
+        public const string ShufflingCards = "Shuffling cards.";
+        public const string DealingCards = "Dealing cards.";
     }
 }
